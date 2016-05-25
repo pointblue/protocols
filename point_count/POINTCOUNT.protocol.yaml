@@ -1,0 +1,12 @@
+
+Meta:
+  Description:
+  URL:
+  Duration:
+Fields:
+  SpeciesCode: FieldBirdId
+  DetectionCode: DetectionCueId
+  Distance: DistanceBinId
+  Minute: TimeBinId
+  Count: BirdCount
+  BreedingCode:

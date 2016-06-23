@@ -58,8 +58,8 @@ CategorySets:
                         ConditionCategoryLabelAfter: null
                         ConditionCategoryDescription: 'Source of the noise'
             -
-                ConditionCategoryId: PercentTreament100m
-                ConditionCategoryDescription: 'Percent Treatment within 100 m'
+                ConditionCategoryId: PercentDisturbance100m
+                ConditionCategoryDescription: 'Percent Disturbance within 100 m'
                 ConditionCategoryDataTypeCd: integer
                 DefaultValue: null
                 ConditionCategoryRules: required
@@ -68,12 +68,12 @@ CategorySets:
                 Help: null
                 Locales:
                     en:
-                        ConditionCategoryLabelBefore: T100
+                        ConditionCategoryLabelBefore: D100
                         ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Percent Treatment within 100 m'
+                        ConditionCategoryDescription: 'Percent Disturbance within 100 m'
             -
-                ConditionCategoryId: PercentTreatment50m
-                ConditionCategoryDescription: 'Percent Treatment within 50 m'
+                ConditionCategoryId: PercentDisturbance50m
+                ConditionCategoryDescription: 'Percent Disturbance within 50 m'
                 ConditionCategoryDataTypeCd: integer
                 DefaultValue: null
                 ConditionCategoryRules: required
@@ -82,9 +82,9 @@ CategorySets:
                 Help: null
                 Locales:
                     en:
-                        ConditionCategoryLabelBefore: T50
+                        ConditionCategoryLabelBefore: D50
                         ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Percent Treatment within 50 m'
+                        ConditionCategoryDescription: 'Percent Disturbance within 50 m'
             -
                 ConditionCategoryId: SnowCoverPercent
                 ConditionCategoryDescription: 'Percentage snow cover'
@@ -127,3 +127,31 @@ CategorySets:
                         ConditionCategoryLabelBefore: 'Wind (0-6)'
                         ConditionCategoryLabelAfter: null
                         ConditionCategoryDescription: 'Wind speed'
+            -
+                ConditionCategoryId: DisturbanceSource
+                ConditionCategoryDescription: 'Source of the disturbance'
+                ConditionCategoryDataTypeCd: text_8
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 9
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Disturbance Source'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'Source of the disturbance'
+            -
+                ConditionCategoryId: Notes
+                ConditionCategoryDescription: 'Free-form notes'
+                ConditionCategoryDataTypeCd: text_8
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 10
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Notes'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'Free-form notes'

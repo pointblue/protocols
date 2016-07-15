@@ -1,210 +1,213 @@
-ProtocolId: CENTRALLAKEHURONTRANSECTS_Conditions
-ProtocolName: 'CENTRALLAKEHURONTRANSECTS Aerial Survey Conditions'
-ProtocolDescriptionURL: ''
-DoubleObserverInd: 0
-IncludesDetectionAidInd: 0
-ProtocolTypeCd: SiteConditions
-CategorySets:
-    -
-        ConditionCategorySetId: Weather
-        MultiplesAllowed: 0
-        ConditionCategorySetDescription: 'weather data'
-        DisplayOrder: 1
-        ConditionCategorySetRules: null
-        Locales:
-            en:
-                ConditionCategorySetLabel: Weather
-        Categories:
-            -
-                ConditionCategoryId: SeaState
-                ConditionCategoryDescription: 'Sea state is described using the Beaufort scale'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-12]$/'
-                DisplayOrder: 3
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Sea State (0-12)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Sea state uses the Beaufort scale'
-            -
-                ConditionCategoryId: PercentCloudCover
-                ConditionCategoryDescription: 'Percent cloud cover (0-100)'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-100]$/'
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Cloud Cover (%)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Percent cloud cover (0-100)'
-            -
-                ConditionCategoryId: PercentIceCover
-                ConditionCategoryDescription: 'Percent ice cover (0-100)'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-100]$/'
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Ice Cover (%)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Percent ice cover (0-100)'                        
-            -
-                ConditionCategoryId: IceBin
-                ConditionCategoryDescription: 'Ice cover on the water (Y/N)?'
-                ConditionCategoryDataTypeCd: text8
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[Y|N]$/'
-                DisplayOrder: 3
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Ice cover (Y/N)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Ice cover on the water (Y/N)?'
-            -
-                ConditionCategoryId: Glare
-                ConditionCategoryDescription: 'Sun glare is described as: 0 . None; 1 . Slight; 2 . Moderate; 3 . Excessive'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-3]$/'
-                DisplayOrder: 4
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Glare'
-                        ConditionCategoryLabelAfter: ''
-                        ConditionCategoryDescription: 'Sun glare: 0 . None; 1 . Slight; 2 . Moderate; 3 . Excessive'
-            -
-                ConditionCategoryId: GlareAngle
-                ConditionCategoryDescription: 'Sun glare angle in degrees'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-355]$/'
-                DisplayOrder: 4
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Glare angle (deg)'
-                        ConditionCategoryLabelAfter: ''
-                        ConditionCategoryDescription: 'Sun glare angle in degrees'
-            -
-                ConditionCategoryId: ObservationConditions
-                ConditionCategoryDescription: 'Subjective overall quality of viewing conditions. Poor observation conditions indicate conditions indicate that part of the track line should not be used in analyses. Categorized as: 0 . Poor; 1 . Fair; 2 . Moderate; 3 . Good; 4 . Excellent'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-4]$/'
-                DisplayOrder: 4
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Observation Conditions (0-4)'
-                        ConditionCategoryLabelAfter: ''
-                        ConditionCategoryDescription: 'Overall quality of viewing conditions: 0 . Poor; 1 . Fair; 2 . Moderate; 3 . Good; 4 . Excellent'
-            -
-                ConditionCategoryId: WindDir
-                ConditionCategoryDescription: 'General wind direction in degrees'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-355]$/'
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Wind direction (deg)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Wind direction in degrees. E.g., 90 = true East.'
-            -
-                ConditionCategoryId: WindVelocity
-                ConditionCategoryDescription: 'Velocity of the wind in knots'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '(^\d+$)'
-                DisplayOrder: 2
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Wind velocity (knots)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Velocity of the wind in knots'
-            -
-                ConditionCategoryId: Temperature
-                ConditionCategoryDescription: 'Ambient air temperature in degrees Fahrenheit'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-120]$/'
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Temperature (°F)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Ambient air temperature in degrees Fahrenheit'
-            -
-                ConditionCategoryId: Precipitation
-                ConditionCategoryDescription: 'The precipitation in millimeters'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-1000]$/'
-                DisplayOrder: 2
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Precipitation (mm)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'The precipitation in millimeters'
-    -
-        ConditionCategorySetId: Vessel
-        MultiplesAllowed: 0
-        ConditionCategorySetDescription: 'vessel data'
-        DisplayOrder: 2
-        ConditionCategorySetRules: null
-        Locales:
-            en:
-                ConditionCategorySetLabel: Vessel data
-        Categories:
-            -
-                ConditionCategoryId: Altitude
-                ConditionCategoryDescription: 'Vessel altitude in meters above the water'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '(^\d+$)'
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Vessel altitude (m)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Vessel altitude in meters above the water'
-            -
-                ConditionCategoryId: Speed
-                ConditionCategoryDescription: 'Speed of the vessel in Km/h'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '(^\d+$)'
-                DisplayOrder: 2
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Vssel speed (Km/h)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Speed of the vessel in Km/h'
+SharedDictionaryCodeSets: []
+
+Protocol:
+    ProtocolId: CENTRALLAKEHURONTRANSECTS_Conditions
+    ProtocolName: 'CENTRALLAKEHURONTRANSECTS Aerial Survey Conditions'
+    ProtocolDescriptionURL: ''
+    DoubleObserverInd: 0
+    IncludesDetectionAidInd: 0
+    ProtocolTypeCd: SiteConditions
+    CategorySets:
+        -
+            ConditionCategorySetId: Weather
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription: 'weather data'
+            DisplayOrder: 1
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel: Weather
+            Categories:
+                -
+                    ConditionCategoryId: SeaState
+                    ConditionCategoryDescription: 'Sea state is described using the Beaufort scale'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-12]$/'
+                    DisplayOrder: 3
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Sea State (0-12)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Sea state uses the Beaufort scale'
+                -
+                    ConditionCategoryId: PercentCloudCover
+                    ConditionCategoryDescription: 'Percent cloud cover (0-100)'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-100]$/'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Cloud Cover (%)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Percent cloud cover (0-100)'
+                -
+                    ConditionCategoryId: PercentIceCover
+                    ConditionCategoryDescription: 'Percent ice cover (0-100)'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-100]$/'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Ice Cover (%)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Percent ice cover (0-100)'
+                -
+                    ConditionCategoryId: IceBin
+                    ConditionCategoryDescription: 'Ice cover on the water (Y/N)?'
+                    ConditionCategoryDataTypeCd: text8
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[Y|N]$/'
+                    DisplayOrder: 3
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Ice cover (Y/N)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Ice cover on the water (Y/N)?'
+                -
+                    ConditionCategoryId: Glare
+                    ConditionCategoryDescription: 'Sun glare is described as: 0 . None; 1 . Slight; 2 . Moderate; 3 . Excessive'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-3]$/'
+                    DisplayOrder: 4
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Glare'
+                            ConditionCategoryLabelAfter: ''
+                            ConditionCategoryDescription: 'Sun glare: 0 . None; 1 . Slight; 2 . Moderate; 3 . Excessive'
+                -
+                    ConditionCategoryId: GlareAngle
+                    ConditionCategoryDescription: 'Sun glare angle in degrees'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-355]$/'
+                    DisplayOrder: 4
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Glare angle (deg)'
+                            ConditionCategoryLabelAfter: ''
+                            ConditionCategoryDescription: 'Sun glare angle in degrees'
+                -
+                    ConditionCategoryId: ObservationConditions
+                    ConditionCategoryDescription: 'Subjective overall quality of viewing conditions. Poor observation conditions indicate conditions indicate that part of the track line should not be used in analyses. Categorized as: 0 . Poor; 1 . Fair; 2 . Moderate; 3 . Good; 4 . Excellent'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-4]$/'
+                    DisplayOrder: 4
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Observation Conditions (0-4)'
+                            ConditionCategoryLabelAfter: ''
+                            ConditionCategoryDescription: 'Overall quality of viewing conditions: 0 . Poor; 1 . Fair; 2 . Moderate; 3 . Good; 4 . Excellent'
+                -
+                    ConditionCategoryId: WindDir
+                    ConditionCategoryDescription: 'General wind direction in degrees'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-355]$/'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Wind direction (deg)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Wind direction in degrees. E.g., 90 = true East.'
+                -
+                    ConditionCategoryId: WindVelocity
+                    ConditionCategoryDescription: 'Velocity of the wind in knots'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '(^\d+$)'
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Wind velocity (knots)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Velocity of the wind in knots'
+                -
+                    ConditionCategoryId: Temperature
+                    ConditionCategoryDescription: 'Ambient air temperature in degrees Fahrenheit'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-120]$/'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Temperature (ï¿½F)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Ambient air temperature in degrees Fahrenheit'
+                -
+                    ConditionCategoryId: Precipitation
+                    ConditionCategoryDescription: 'The precipitation in millimeters'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-1000]$/'
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Precipitation (mm)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'The precipitation in millimeters'
+        -
+            ConditionCategorySetId: Vessel
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription: 'vessel data'
+            DisplayOrder: 2
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel: Vessel data
+            Categories:
+                -
+                    ConditionCategoryId: Altitude
+                    ConditionCategoryDescription: 'Vessel altitude in meters above the water'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '(^\d+$)'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Vessel altitude (m)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Vessel altitude in meters above the water'
+                -
+                    ConditionCategoryId: Speed
+                    ConditionCategoryDescription: 'Speed of the vessel in Km/h'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '(^\d+$)'
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Vssel speed (Km/h)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Speed of the vessel in Km/h'
                         

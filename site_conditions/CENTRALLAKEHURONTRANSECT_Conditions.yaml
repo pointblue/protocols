@@ -60,14 +60,16 @@ Protocol:
                             ConditionCategoryLabelBefore: 'Glare'
                             ConditionCategoryLabelAfter: ''
                             ConditionCategoryDescription: 'Sun glare - either one of Low, Medium, or High'
-                    Dictionary:
-                        CodeSetId: FAYVOR TO PROVIDE??
+                    CodeSet:
                         CodeSetName: SunGlare
                         CodeSetDescription: 'Sun glare'
                         Codes:
-                            'Low': 'Low glare'
-                            'Medium': 'Medium glare'
-                            'High': 'High glare'
+                            -
+                                'Low': 'Low glare'
+                            -
+                                'Medium': 'Medium glare'
+                            -
+                                'High': 'High glare'
                 -
                     ConditionCategoryId: Precipitation
                     ConditionCategoryDescription: 'The type of precipitation in the following categories: 0 . none; 1 . light rain; 2 . rain; 3 . heavy rain; 4 . light snow; 5 . snow; 6 . heavy snow; 7 . fog'

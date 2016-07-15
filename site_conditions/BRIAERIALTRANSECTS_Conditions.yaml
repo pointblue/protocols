@@ -1,8 +1,8 @@
 SharedDictionaryCodeSets: []
 
 Protocol:
-    ProtocolId: CENTRALLAKEHURONTRANSECTS_Conditions
-    ProtocolName: 'CENTRALLAKEHURONTRANSECTS Aerial Survey Conditions'
+    ProtocolId: BRIAERIALTRANSECTS_Conditions
+    ProtocolName: 'BRIAERIALTRANSECTS Aerial Survey Conditions'
     ProtocolDescriptionURL: ''
     DoubleObserverInd: 0
     IncludesDetectionAidInd: 0

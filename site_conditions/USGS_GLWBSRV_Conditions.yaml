@@ -1,112 +1,115 @@
-ProtocolId: USGS_GLWBSRV_Conditions
-ProtocolName: 'USGS_GLWBSRV Aerial Survey Conditions'
-ProtocolDescriptionURL: ''
-DoubleObserverInd: 0
-IncludesDetectionAidInd: 0
-ProtocolTypeCd: SiteConditions
-CategorySets:
-    -
-        ConditionCategorySetId: Weather
-        MultiplesAllowed: 0
-        ConditionCategorySetDescription: 'weather data'
-        DisplayOrder: 1
-        ConditionCategorySetRules: null
-        Locales:
-            en:
-                ConditionCategorySetLabel: Weather
-        Categories:
-            -
-                ConditionCategoryId: WindDir
-                ConditionCategoryDescription: 'General wind direction in degrees'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[0-355]$/'
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Wind direction (deg)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Wind direction in degrees. E.g., 90 = true East.'
-            -
-                ConditionCategoryId: WindVelocity
-                ConditionCategoryDescription: 'Velocity of the wind in knots'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '(^\d+$)'
-                DisplayOrder: 2
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Wind velocity (knots)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Velocity of the wind in knots'
-            -
-                ConditionCategoryId: Sky
-                ConditionCategoryDescription: 'Sky conditions as described in the following categories: 1 . clear (<5% clouds); 2 . partly cloudy (<50% clouds); 3 . mostly cloudy (>50% clouds); 4 . overcast (95-100% clouds)'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[1-4]$/'
-                DisplayOrder: 3
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Sky condition'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Sky conditions as described in the following categories: 1 . clear (<5% clouds); 2 . partly cloudy (<50% clouds); 3 . mostly cloudy (>50% clouds); 4 . overcast (95-100% clouds)'
-            -
-                ConditionCategoryId: Visibility
-                ConditionCategoryDescription: 'The level of visibility in the following categories: 1 . poor; 2 . fair; 3 . good; 4 . very good; 5 . excellent. Rating takes into account sun glare, lighting conditions, water surface/color, and boserver fatigue.'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^[1-5]$/'
-                DisplayOrder: 4
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Visibility (1-5)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'The level of visibility: 1 . poor; 2 . fair; 3 . good; 4 . very good; 5 . excellent.'
-                        
-    -
-        ConditionCategorySetId: Vessel
-        MultiplesAllowed: 0
-        ConditionCategorySetDescription: 'vessel data'
-        DisplayOrder: 2
-        ConditionCategorySetRules: null
-        Locales:
-            en:
-                ConditionCategorySetLabel: Vessel data
-        Categories:
-            -
-                ConditionCategoryId: Altitude
-                ConditionCategoryDescription: 'Vessel altitude in feet above the water'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '(^\d+$)'
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Vessel altitude (feet)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Vessel altitude in feet above the water'
-            -
-                ConditionCategoryId: AirSpeed
-                ConditionCategoryDescription: 'Speed of the vessel in relation to outside wind, in knots'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '(^\d+$)'
-                DisplayOrder: 2
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Air speed (knots)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Speed of the vessel in relation to outside wind, in knots'
+SharedDictionaryCodeSets: []
+
+Protocol:
+    ProtocolId: USGS_GLWBSRV_Conditions
+    ProtocolName: 'USGS_GLWBSRV Aerial Survey Conditions'
+    ProtocolDescriptionURL: ''
+    DoubleObserverInd: 0
+    IncludesDetectionAidInd: 0
+    ProtocolTypeCd: SiteConditions
+    CategorySets:
+        -
+            ConditionCategorySetId: Weather
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription: 'weather data'
+            DisplayOrder: 1
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel: Weather
+            Categories:
+                -
+                    ConditionCategoryId: WindDir
+                    ConditionCategoryDescription: 'General wind direction in degrees'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-355]$/'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Wind direction (deg)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Wind direction in degrees. E.g., 90 = true East.'
+                -
+                    ConditionCategoryId: WindVelocity
+                    ConditionCategoryDescription: 'Velocity of the wind in knots'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '(^\d+$)'
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Wind velocity (knots)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Velocity of the wind in knots'
+                -
+                    ConditionCategoryId: Sky
+                    ConditionCategoryDescription: 'Sky conditions as described in the following categories: 1 . clear (<5% clouds); 2 . partly cloudy (<50% clouds); 3 . mostly cloudy (>50% clouds); 4 . overcast (95-100% clouds)'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[1-4]$/'
+                    DisplayOrder: 3
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Sky condition'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Sky conditions as described in the following categories: 1 . clear (<5% clouds); 2 . partly cloudy (<50% clouds); 3 . mostly cloudy (>50% clouds); 4 . overcast (95-100% clouds)'
+                -
+                    ConditionCategoryId: Visibility
+                    ConditionCategoryDescription: 'The level of visibility in the following categories: 1 . poor; 2 . fair; 3 . good; 4 . very good; 5 . excellent. Rating takes into account sun glare, lighting conditions, water surface/color, and boserver fatigue.'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[1-5]$/'
+                    DisplayOrder: 4
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Visibility (1-5)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'The level of visibility: 1 . poor; 2 . fair; 3 . good; 4 . very good; 5 . excellent.'
+
+        -
+            ConditionCategorySetId: Vessel
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription: 'vessel data'
+            DisplayOrder: 2
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel: Vessel data
+            Categories:
+                -
+                    ConditionCategoryId: Altitude
+                    ConditionCategoryDescription: 'Vessel altitude in feet above the water'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '(^\d+$)'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Vessel altitude (feet)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Vessel altitude in feet above the water'
+                -
+                    ConditionCategoryId: AirSpeed
+                    ConditionCategoryDescription: 'Speed of the vessel in relation to outside wind, in knots'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '(^\d+$)'
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Air speed (knots)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Speed of the vessel in relation to outside wind, in knots'

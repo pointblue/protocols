@@ -1,34 +1,31 @@
-SharedDictionaryCodeSets: []
-
-Protocol:
-    ProtocolId: WGLBBOTRANSECTS_Conditions
-    ProtocolName: 'WGLBBOTRANSECTS Aerial Survey Conditions'
-    ProtocolDescriptionURL: ''
-    DoubleObserverInd: 0
-    IncludesDetectionAidInd: 0
-    ProtocolTypeCd: SiteConditions
-    CategorySets:
-        -
-            ConditionCategorySetId: Visibility
-            MultiplesAllowed: 0
-            ConditionCategorySetDescription: 'Estimated visibility, taking into account: sun glare, light conditions, water surface (e.g., calm, small waves - no whitecaps, occassional whitecaps), observer fatigue. The rating was determined independently for each side of the plane/each observer.'
-            DisplayOrder: 1
-            ConditionCategorySetRules: null
-            Locales:
-                en:
-                    ConditionCategorySetLabel: Visibility
-            Categories:
-                -
-                    ConditionCategoryId: Visibility
-                    ConditionCategoryDescription: 'The estimated visibility is described using the following scale: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'
-                    ConditionCategoryDataTypeCd: float
-                    DefaultValue: null
-                    ConditionCategoryRules: 'regex'
-                    ConditionCategoryRuleData: '^[1-5]{1}(\.[0-9]{1})?$'
-                    DisplayOrder: 1
-                    Help: null
-                    Locales:
-                        en:
-                            ConditionCategoryLabelBefore: 'Visibility (1-5)'
-                            ConditionCategoryLabelAfter: null
-                            ConditionCategoryDescription: 'The estimated visibility: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'
+ProtocolId: WGLBBOTRANSECTS_Conditions
+ProtocolName: 'WGLBBOTRANSECTS Aerial Survey Conditions'
+ProtocolDescriptionURL: ''
+DoubleObserverInd: 0
+IncludesDetectionAidInd: 0
+ProtocolTypeCd: SiteConditions
+CategorySets:
+    -
+        ConditionCategorySetId: Visibility
+        MultiplesAllowed: 0
+        ConditionCategorySetDescription: 'Estimated visibility, taking into account: sun glare, light conditions, water surface (e.g., calm, small waves - no whitecaps, occassional whitecaps), observer fatigue. The rating was determined independently for each side of the plane/each observer.'
+        DisplayOrder: 1
+        ConditionCategorySetRules: null
+        Locales:
+            en:
+                ConditionCategorySetLabel: Visibility
+        Categories:
+            -
+                ConditionCategoryId: Visibility
+                ConditionCategoryDescription: 'The estimated visibility is described using the following scale: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'
+                ConditionCategoryDataTypeCd: float
+                DefaultValue: null
+                ConditionCategoryRules: 'regex'
+                ConditionCategoryRuleData: '^[1-5]{1}(\.[0-9]{1})?$'
+                DisplayOrder: 1
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Visibility (1-5)'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The estimated visibility: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'

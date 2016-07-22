@@ -260,6 +260,6 @@ CategorySets:
                 Help: null
                 Locales:
                     en:
-                        ConditionCategoryLabelBefore: 'Vssel speed (Km/h)'
+                        ConditionCategoryLabelBefore: 'Vessel speed (Km/h)'
                         ConditionCategoryLabelAfter: null
                         ConditionCategoryDescription: 'Speed of the vessel in Km/h'

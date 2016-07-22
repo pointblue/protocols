@@ -1,0 +1,86 @@
+SharedDictionaryCodeSets: []
+
+Protocol:
+    ProtocolId: CENTRALLAKEHURONTRANSECTS_Condit
+    ProtocolName: 'CENTRALLAKEHURONTRANSECTS Aerial Survey Conditions'
+    ProtocolDescriptionURL: ''
+    DoubleObserverInd: 0
+    IncludesDetectionAidInd: 0
+    ProtocolTypeCd: SiteConditions
+    CategorySets:
+        -
+            ConditionCategorySetId: Weather
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription: 'weather data'
+            DisplayOrder: 1
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel: Weather
+            Categories:
+                -
+                    ConditionCategoryId: CloudCover
+                    ConditionCategoryDescription: 'Cloud cover is described using the following scale: 0 . clear(<13% clouds); 1 . mostly clear (13-25% clouds); 2 . partly cloudy (26-63% clouds); 4 . cloudy (89-100% clouds)'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-4]$/'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Cloud Cover (0-4)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Cloud cover uses the following scale: 0 . clear(<13% clouds); 1 . mostly clear (13-25% clouds); 2 . partly cloudy (26-63% clouds); 4 . cloudy (89-100% clouds)'
+                -
+                    ConditionCategoryId: SeaState
+                    ConditionCategoryDescription: 'Sea state is described using the following scale: 0 . mirror calm; 1 . small ripples; 2 . small waves with no whitecaps; 3 . small waves with few whitecaps; 4 . moderate waves and numerous whitecaps; 5 . large waves with whitecaps forming bands; 6 . large waves with dominant whitecaps forming broad bands'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-6]$/'
+                    DisplayOrder: 3
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Sea State (0-6)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Sea state uses the following scale: 0 . mirror calm; 1 . small ripples; 2 . small waves with no whitecaps; 3 . small waves with few whitecaps; 4 . moderate waves and numerous whitecaps; 5 . large waves with whitecaps forming bands; 6 . large waves with dominant whitecaps forming broad bands'
+                -
+                    ConditionCategoryId: Glare
+                    ConditionCategoryDescription: 'Sun glare is described as Low, Medium, or High'
+                    ConditionCategoryDataTypeCd: dictionary
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 4
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Glare'
+                            ConditionCategoryLabelAfter: ''
+                            ConditionCategoryDescription: 'Sun glare - either one of Low, Medium, or High'
+                    CodeSet:
+                        CodeSetName: SunGlare
+                        CodeSetDescription: 'Sun glare'
+                        Codes:
+                            -
+                                'Low': 'Low glare'
+                            -
+                                'Medium': 'Medium glare'
+                            -
+                                'High': 'High glare'
+                -
+                    ConditionCategoryId: Precipitation
+                    ConditionCategoryDescription: 'The type of precipitation in the following categories: 0 . none; 1 . light rain; 2 . rain; 3 . heavy rain; 4 . light snow; 5 . snow; 6 . heavy snow; 7 . fog'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^[0-7]$/'
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Precipitation (0-7)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'The type of precipitation: 0 . none; 1 . light rain; 2 . rain; 3 . heavy rain; 4 . light snow; 5 . snow; 6 . heavy snow; 7 . fog'

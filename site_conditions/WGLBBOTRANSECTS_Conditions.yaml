@@ -29,3 +29,42 @@ CategorySets:
                         ConditionCategoryLabelBefore: 'Visibility (1-5)'
                         ConditionCategoryLabelAfter: null
                         ConditionCategoryDescription: 'The estimated visibility: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'
+    -
+        ConditionCategorySetId: Vessel
+        MultiplesAllowed: 0
+        ConditionCategorySetDescription: 'vessel data'
+        DisplayOrder: 2
+        ConditionCategorySetRules: null
+        Locales:
+            en:
+                ConditionCategorySetLabel: Vessel data
+        Categories:
+            -
+                ConditionCategoryId: Altitude
+                ConditionCategoryDescription: 'Vessel altitude in meters above the water'
+                ConditionCategoryDataTypeCd: integer
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 1
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Vessel altitude (m)'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'Vessel altitude in meters above the water'
+            -
+                ConditionCategoryId: Speed
+                ConditionCategoryDescription: 'Speed of the vessel in Km/h'
+                ConditionCategoryDataTypeCd: integer
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 2
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Vssel speed (Knots)'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'Speed of the vessel in knots'
+                        

@@ -1,157 +1,160 @@
-ProtocolId: SNAMIN_Treatment_Conditions
-ProtocolName: 'SNAMIN Weather Conditions with Percent Treatment w/in 50m,100m'
-ProtocolDescriptionURL: ''
-DoubleObserverInd: 0
-IncludesDetectionAidInd: 0
-ProtocolTypeCd: SiteConditions
-CategorySets:
-    -
-        ConditionCategorySetId: Weather
-        MultiplesAllowed: 0
-        ConditionCategorySetDescription: 'weather data'
-        DisplayOrder: 2
-        ConditionCategorySetRules: null
-        Locales:
-            en:
-                ConditionCategorySetLabel: Weather
-        Categories:
-            -
-                ConditionCategoryId: CloudCover
-                ConditionCategoryDescription: 'Percentage cloud cover'
-                ConditionCategoryDataTypeCd: percentage
-                DefaultValue: null
-                ConditionCategoryRules: required
-                ConditionCategoryRuleData: null
-                DisplayOrder: 2
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Cloud Cover'
-                        ConditionCategoryLabelAfter: '%'
-                        ConditionCategoryDescription: 'Percentage cloud cover'
-            -
-                ConditionCategoryId: Noise
-                ConditionCategoryDescription: 'Noise will be described using the following scale: 0 . none; 1 . slight; 2 . moderate; 3 . loud; 4 . intense;'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex,required'
-                ConditionCategoryRuleData: '/^[0-4]$/'
-                DisplayOrder: 5
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Noise (0-4)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Noise will be described using the following scale: 0 . none; 1 . slight; 2 . moderate; 3 . loud; 4 . intense;'
-            -
-                ConditionCategoryId: NoiseSource
-                ConditionCategoryDescription: 'Source of the noise'
-                ConditionCategoryDataTypeCd: text_8
-                DefaultValue: null
-                ConditionCategoryRules: null
-                ConditionCategoryRuleData: null
-                DisplayOrder: 6
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Noise Source'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Source of the noise'
-            -
-                ConditionCategoryId: PercentDisturbance100m
-                ConditionCategoryDescription: 'Percent Disturbance within 100 m'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: required
-                ConditionCategoryRuleData: null
-                DisplayOrder: 8
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: D100
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Percent Disturbance within 100 m'
-            -
-                ConditionCategoryId: PercentDisturbance50m
-                ConditionCategoryDescription: 'Percent Disturbance within 50 m'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: required
-                ConditionCategoryRuleData: null
-                DisplayOrder: 7
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: D50
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Percent Disturbance within 50 m'
-            -
-                ConditionCategoryId: SnowCoverPercent
-                ConditionCategoryDescription: 'Percentage snow cover'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: required
-                ConditionCategoryRuleData: null
-                DisplayOrder: 4
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Snow Cover'
-                        ConditionCategoryLabelAfter: '%'
-                        ConditionCategoryDescription: 'Percentage snow cover'
-            -
-                ConditionCategoryId: Temperature
-                ConditionCategoryDescription: 'The ambient temperature'
-                ConditionCategoryDataTypeCd: float
-                DefaultValue: null
-                ConditionCategoryRules: required
-                ConditionCategoryRuleData: null
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: Temperature
-                        ConditionCategoryLabelAfter: ''
-                        ConditionCategoryDescription: 'The ambient temperature'
-            -
-                ConditionCategoryId: WindSpeed
-                ConditionCategoryDescription: 'Wind speed'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex,required'
-                ConditionCategoryRuleData: '/^[0-6]$/'
-                DisplayOrder: 3
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Wind (0-6)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Wind speed'
-            -
-                ConditionCategoryId: DisturbanceSource
-                ConditionCategoryDescription: 'Source of the disturbance'
-                ConditionCategoryDataTypeCd: text_8
-                DefaultValue: null
-                ConditionCategoryRules: null
-                ConditionCategoryRuleData: null
-                DisplayOrder: 9
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Disturbance Source'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Source of the disturbance'
-            -
-                ConditionCategoryId: Notes
-                ConditionCategoryDescription: 'Free-form notes'
-                ConditionCategoryDataTypeCd: text_8
-                DefaultValue: null
-                ConditionCategoryRules: null
-                ConditionCategoryRuleData: null
-                DisplayOrder: 10
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Notes'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Free-form notes'
+SharedDictionaryCodeSets: []
+
+Protocol:
+    ProtocolId: SNAMIN_Treatment_Conditions
+    ProtocolName: 'SNAMIN Weather Conditions with Percent Treatment w/in 50m,100m'
+    ProtocolDescriptionURL: ''
+    DoubleObserverInd: 0
+    IncludesDetectionAidInd: 0
+    ProtocolTypeCd: SiteConditions
+    CategorySets:
+        -
+            ConditionCategorySetId: Weather
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription: 'weather data'
+            DisplayOrder: 2
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel: Weather
+            Categories:
+                -
+                    ConditionCategoryId: CloudCover
+                    ConditionCategoryDescription: 'Percentage cloud cover'
+                    ConditionCategoryDataTypeCd: percentage
+                    DefaultValue: null
+                    ConditionCategoryRules: required
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Cloud Cover'
+                            ConditionCategoryLabelAfter: '%'
+                            ConditionCategoryDescription: 'Percentage cloud cover'
+                -
+                    ConditionCategoryId: Noise
+                    ConditionCategoryDescription: 'Noise will be described using the following scale: 0 . none; 1 . slight; 2 . moderate; 3 . loud; 4 . intense;'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex,required'
+                    ConditionCategoryRuleData: '/^[0-4]$/'
+                    DisplayOrder: 5
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Noise (0-4)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Noise will be described using the following scale: 0 . none; 1 . slight; 2 . moderate; 3 . loud; 4 . intense;'
+                -
+                    ConditionCategoryId: NoiseSource
+                    ConditionCategoryDescription: 'Source of the noise'
+                    ConditionCategoryDataTypeCd: text_8
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 6
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Noise Source'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Source of the noise'
+                -
+                    ConditionCategoryId: PercentDisturbance100m
+                    ConditionCategoryDescription: 'Percent Disturbance within 100 m'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: required
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 8
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: D100
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Percent Disturbance within 100 m'
+                -
+                    ConditionCategoryId: PercentDisturbance50m
+                    ConditionCategoryDescription: 'Percent Disturbance within 50 m'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: required
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 7
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: D50
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Percent Disturbance within 50 m'
+                -
+                    ConditionCategoryId: SnowCoverPercent
+                    ConditionCategoryDescription: 'Percentage snow cover'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: required
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 4
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Snow Cover'
+                            ConditionCategoryLabelAfter: '%'
+                            ConditionCategoryDescription: 'Percentage snow cover'
+                -
+                    ConditionCategoryId: Temperature
+                    ConditionCategoryDescription: 'The ambient temperature'
+                    ConditionCategoryDataTypeCd: float
+                    DefaultValue: null
+                    ConditionCategoryRules: required
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: Temperature
+                            ConditionCategoryLabelAfter: ''
+                            ConditionCategoryDescription: 'The ambient temperature'
+                -
+                    ConditionCategoryId: WindSpeed
+                    ConditionCategoryDescription: 'Wind speed'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex,required'
+                    ConditionCategoryRuleData: '/^[0-6]$/'
+                    DisplayOrder: 3
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Wind (0-6)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Wind speed'
+                -
+                    ConditionCategoryId: DisturbanceSource
+                    ConditionCategoryDescription: 'Source of the disturbance'
+                    ConditionCategoryDataTypeCd: text_8
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 9
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Disturbance Source'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Source of the disturbance'
+                -
+                    ConditionCategoryId: Notes
+                    ConditionCategoryDescription: 'Free-form notes'
+                    ConditionCategoryDataTypeCd: text_8
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 10
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Notes'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Free-form notes'

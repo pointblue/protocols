@@ -1,140 +1,142 @@
-ProtocolId: WGLBBOTRANSECTS_Conditions
-ProtocolName: 'WGLBBOTRANSECTS Aerial Survey Conditions'
-ProtocolDescriptionURL: ''
-DoubleObserverInd: 0
-IncludesDetectionAidInd: 0
-ProtocolTypeCd: SiteConditions
-CategorySets:
-    -
-        ConditionCategorySetId: Visibility
-        MultiplesAllowed: 0
-        ConditionCategorySetDescription: 'Estimated visibility, taking into account: sun glare, light conditions, water surface (e.g., calm, small waves - no whitecaps, occassional whitecaps), observer fatigue. The rating was determined independently for each side of the plane/each observer.'
-        DisplayOrder: 1
-        ConditionCategorySetRules: null
-        Locales:
-            en:
-                ConditionCategorySetLabel: Visibility
-        Categories:
-            -
-                ConditionCategoryId: Visibility
-                ConditionCategoryDescription: 'The estimated visibility is described using the following scale: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'
-                ConditionCategoryDataTypeCd: float
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '^[1-5]{1}(\.[0-9]{1})?$'
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Visibility (1-5)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'The estimated visibility: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'
-            -
-                ConditionCategoryId: WindDir
-                ConditionCategoryDescription: 'General wind direction in degrees'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^([0-9]{1,2}|[12][0-9]{2}|3[0-5][0-9]|360)$/'
-                DisplayOrder: 2
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Wind direction (deg)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Wind direction in degrees. E.g., 90 = true East.'
-            -
-                ConditionCategoryId: WindVelocity
-                ConditionCategoryDescription: 'Velocity of the wind in miles per hour'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: null
-                ConditionCategoryRuleData: null
-                DisplayOrder: 3
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Wind velocity (mph)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Velocity of the wind in miles per hour'
-            -
-                ConditionCategoryId: Temperature
-                ConditionCategoryDescription: 'Ambient air temperature in degrees Fahrenheit'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: null
-                ConditionCategoryRuleData: null
-                DisplayOrder: 4
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Temperature (&deg;F)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Ambient air temperature in degrees Fahrenheit'
-            -
-                ConditionCategoryId: Precipitation
-                ConditionCategoryDescription: 'The precipitation in millimeters'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: null
-                ConditionCategoryRuleData: null
-                DisplayOrder: 5
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Precipitation (mm)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'The precipitation in millimeters'
-    -
-        ConditionCategorySetId: Vessel
-        MultiplesAllowed: 0
-        ConditionCategorySetDescription: 'vessel data'
-        DisplayOrder: 2
-        ConditionCategorySetRules: null
-        Locales:
-            en:
-                ConditionCategorySetLabel: Vessel data
-        Categories:
-            -
-                ConditionCategoryId: Altitude
-                ConditionCategoryDescription: 'Vessel altitude in meters above the water'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: null
-                ConditionCategoryRuleData: null
-                DisplayOrder: 1
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Vessel altitude (m)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Vessel altitude in meters above the water'
-            -
-                ConditionCategoryId: Speed
-                ConditionCategoryDescription: 'Speed of the vessel in Km/h'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: null
-                ConditionCategoryRuleData: null
-                DisplayOrder: 2
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Vssel speed (Knots)'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Speed of the vessel in knots'
-            -
-                ConditionCategoryId: Direction
-                ConditionCategoryDescription: 'Direction of the vessel in degrees'
-                ConditionCategoryDataTypeCd: integer
-                DefaultValue: null
-                ConditionCategoryRules: 'regex'
-                ConditionCategoryRuleData: '/^([0-9]{1,2}|[12][0-9]{2}|3[0-5][0-9]|360)$/'
-                DisplayOrder: 3
-                Help: null
-                Locales:
-                    en:
-                        ConditionCategoryLabelBefore: 'Vessel direction'
-                        ConditionCategoryLabelAfter: null
-                        ConditionCategoryDescription: 'Direction of the vessel in degrees'
-                        
+SharedDictionaryCodeSets: []
+
+Protocol:
+    ProtocolId: WGLBBOTRANSECTS_Conditions
+    ProtocolName: 'WGLBBOTRANSECTS Aerial Survey Conditions'
+    ProtocolDescriptionURL: ''
+    DoubleObserverInd: 0
+    IncludesDetectionAidInd: 0
+    ProtocolTypeCd: SiteConditions
+    CategorySets:
+        -
+            ConditionCategorySetId: Visibility
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription: 'Estimated visibility, taking into account: sun glare, light conditions, water surface (e.g., calm, small waves - no whitecaps, occassional whitecaps), observer fatigue. The rating was determined independently for each side of the plane/each observer.'
+            DisplayOrder: 1
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel: Visibility
+            Categories:
+                -
+                    ConditionCategoryId: Visibility
+                    ConditionCategoryDescription: 'The estimated visibility is described using the following scale: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'
+                    ConditionCategoryDataTypeCd: float
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '^[1-5]{1}(\.[0-9]{1})?$'
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Visibility (1-5)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'The estimated visibility: 1 . Poor; 2 . Fair; 3 . Good/Average; 4 . Very good; 5 . Excellent'
+                -
+                    ConditionCategoryId: WindDir
+                    ConditionCategoryDescription: 'General wind direction in degrees'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^([0-9]{1,2}|[12][0-9]{2}|3[0-5][0-9]|360)$/'
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Wind direction (deg)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Wind direction in degrees. E.g., 90 = true East.'
+                -
+                    ConditionCategoryId: WindVelocity
+                    ConditionCategoryDescription: 'Velocity of the wind in miles per hour'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 3
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Wind velocity (mph)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Velocity of the wind in miles per hour'
+                -
+                    ConditionCategoryId: Temperature
+                    ConditionCategoryDescription: 'Ambient air temperature in degrees Fahrenheit'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 4
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Temperature (&deg;F)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Ambient air temperature in degrees Fahrenheit'
+                -
+                    ConditionCategoryId: Precipitation
+                    ConditionCategoryDescription: 'The precipitation in millimeters'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 5
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Precipitation (mm)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'The precipitation in millimeters'
+        -
+            ConditionCategorySetId: Vessel
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription: 'vessel data'
+            DisplayOrder: 2
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel: Vessel data
+            Categories:
+                -
+                    ConditionCategoryId: Altitude
+                    ConditionCategoryDescription: 'Vessel altitude in meters above the water'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 1
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Vessel altitude (m)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Vessel altitude in meters above the water'
+                -
+                    ConditionCategoryId: Speed
+                    ConditionCategoryDescription: 'Speed of the vessel in Km/h'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 2
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Vssel speed (Knots)'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Speed of the vessel in knots'
+                -
+                    ConditionCategoryId: Direction
+                    ConditionCategoryDescription: 'Direction of the vessel in degrees'
+                    ConditionCategoryDataTypeCd: integer
+                    DefaultValue: null
+                    ConditionCategoryRules: 'regex'
+                    ConditionCategoryRuleData: '/^([0-9]{1,2}|[12][0-9]{2}|3[0-5][0-9]|360)$/'
+                    DisplayOrder: 3
+                    Help: null
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore: 'Vessel direction'
+                            ConditionCategoryLabelAfter: null
+                            ConditionCategoryDescription: 'Direction of the vessel in degrees'

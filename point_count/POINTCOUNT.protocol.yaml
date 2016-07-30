@@ -4,9 +4,9 @@ Meta:
   URL:
   Duration:
 Fields:
-  SpeciesCode: FieldBirdId
-  DetectionCode: DetectionCueId
-  Distance: DistanceBinId
-  Minute: TimeBinId
-  Count: BirdCount
+  FieldBirdId:
+  DetectionCueId:
+  DistanceBinId:
+  TimeBinId:
+  BirdCount:
   BreedingCode:

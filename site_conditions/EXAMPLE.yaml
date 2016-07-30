@@ -1,0 +1,40 @@
+SharedDictionaryCodeSets: []
+
+Protocol:
+    ProtocolId:
+    ProtocolName:
+    ProtocolDescriptionURL:
+    DoubleObserverInd: 0
+    IncludesDetectionAidInd: 0
+    ProtocolTypeCd: SiteConditions
+    CategorySets:
+        -
+            ConditionCategorySetId:
+            MultiplesAllowed: 0
+            ConditionCategorySetDescription:
+            DisplayOrder: 1
+            ConditionCategorySetRules: null
+            Locales:
+                en:
+                    ConditionCategorySetLabel:
+            Categories:
+                -
+                    ConditionCategoryId:
+                    ConditionCategoryDescription:
+                    ConditionCategoryDataTypeCd: dictionary
+                    DefaultValue: null
+                    ConditionCategoryRules: null
+                    ConditionCategoryRuleData: null
+                    DisplayOrder: 1
+                    Help:
+                    Locales:
+                        en:
+                            ConditionCategoryLabelBefore:
+                            ConditionCategoryLabelAfter:
+                            ConditionCategoryDescription:
+                    CodeSet:
+                        CodeSetName:
+                        CodeSetDescription:
+                        Codes:
+                            -
+                                '0': A

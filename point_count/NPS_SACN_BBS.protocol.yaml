@@ -1,0 +1,51 @@
+Meta:
+  ProtocolId: NPS_ISRO_BBS
+  ProtocolName: ISRO BBS Methods
+  ProtocolDescriptionURL:
+  DoubleObserverInd: 0
+  IncludesDetectionAidInd: 0
+  Description: >
+
+TimeBins:
+  - TimeBinId: 1
+    TimeBinDescription: 0 to 1 minutes
+    TimeBinStartMinute: 0
+    TimeBinEndMinute: 1
+    TimeBinDuration: 1
+  - TimeBinId: 2
+    TimeBinDescription: 0 to 2 minutes
+    TimeBinStartMinute: 1
+    TimeBinEndMinute: 2
+    TimeBinDuration: 1
+  - TimeBinId: 3
+    TimeBinDescription: 0 to 3 minutes
+    TimeBinStartMinute: 2
+    TimeBinEndMinute: 3
+    TimeBinDuration: 1
+  - TimeBinId: 4
+    TimeBinDescription: 0 to 4 minutes
+    TimeBinStartMinute: 3
+    TimeBinEndMinute: 4
+    TimeBinDuration: 1
+  - TimeBinId: 5
+    TimeBinDescription: 0 to 5 minutes
+    TimeBinStartMinute: 4
+    TimeBinEndMinute: 5
+    TimeBinDuration: 1
+DistanceBins:
+  - DistanceBinId: ??
+    DistanceBinDescription:
+    DistanceBinObserverMin: 0
+    DistanceBinObserverMax: ??
+    # TODO: find max distance and fill in the distance bin
+DetectionCues:
+  - DetectionCueId: S
+    DetectionCueDescription: Singing
+  - DetectionCueId: C
+    DetectionCueDescription: Calling
+  - DetectionCueId: O
+    DetectionCueDescription: Observed
+  - DetectionCueId: F
+    DetectionCueDescription: Flyover
+  - DetectionCueId: NV
+    DetectionCueDescription: Non-vocal

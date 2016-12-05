@@ -1,11 +1,11 @@
 Meta:
-  ProtocolId: NPS_ISRO_BBS
-  ProtocolName: ISRO BBS Methods
+  ProtocolId: NPS_ISRO_BBS_pre2013
+  ProtocolName: ISRO BBS Methods pre-2013
   ProtocolDescriptionURL:
   DoubleObserverInd: 0
   IncludesDetectionAidInd: 0
   Description: >
-    Methods used 2013 and onward at ISRO.
+    Methods used before 2013 at ISRO.
 
     Points were approximately 0.4 km (¼ mi) apart, and each had a tagged tree
     associated with it to help in relocating the site each year. Points were
@@ -51,12 +51,8 @@ DistanceBins:
     DistanceBinObserverMin: 0
     DistanceBinObserverMax: 50
   - DistanceBinId: G50
-    DistanceBinDescription: 50-100m
+    DistanceBinDescription: >50m
     DistanceBinObserverMin: 50
-    DistanceBinObserverMax: 100
-  - DistanceBinId: B00
-    DistanceBinDescription: >100m
-    DistanceBinObserverMin: 100
     DistanceBinObserverMax: 1000
 DetectionCues:
   - DetectionCueId: S

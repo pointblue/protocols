@@ -1,0 +1,35 @@
+Meta:
+  ProtocolId: NPS_SACN_BBS_2008
+  ProtocolName: SACN BBS Methods 2008
+  ProtocolDescriptionURL:
+  DoubleObserverInd: 0
+  IncludesDetectionAidInd: 0
+  Description: >
+
+    2008
+      Surveys conducted by anchoring at fixed locations, 6-minute counts, GLKN
+      protocol distance bins used.
+
+
+TimeBins:
+  - TimeBinId: 0
+    TimeBinDescription: 0 to 6 minutes
+    TimeBinStartMinute: 0
+    TimeBinEndMinute: 6
+    TimeBinDuration: 6
+DistanceBins:
+  - DistanceBinId: L1000
+    DistanceBinDescription: 0-1000m
+    DistanceBinObserverMin: 0
+    DistanceBinObserverMax: 1000
+DetectionCues:
+  - DetectionCueId: S
+    DetectionCueDescription: Singing
+  - DetectionCueId: C
+    DetectionCueDescription: Calling
+  - DetectionCueId: O
+    DetectionCueDescription: Observed
+  - DetectionCueId: F
+    DetectionCueDescription: Flyover
+  - DetectionCueId: NV
+    DetectionCueDescription: Non-vocal

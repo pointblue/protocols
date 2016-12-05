@@ -38,18 +38,6 @@ Meta:
       Two additional routes were added in 2000 (SACN, UNAM), one in 2003 (USAC),
       and one in 2012 (MSAC).
 
-    2005
-      5- and 10-minute count duration. Five-minute counts on one transect (USAC)
-      only.
-
-    2006–2007
-      5-minute count duration.
-
-    2008
-      Surveys conducted by anchoring at fixed locations, 6-minute counts, GLKN
-      protocol distance bins used.
-
-
 TimeBins:
   - TimeBinId: 1
     TimeBinDescription: 0 to 1 minutes
@@ -57,24 +45,29 @@ TimeBins:
     TimeBinEndMinute: 1
     TimeBinDuration: 1
   - TimeBinId: 2
-    TimeBinDescription: 0 to 2 minutes
+    TimeBinDescription: 1 to 2 minutes
     TimeBinStartMinute: 1
     TimeBinEndMinute: 2
     TimeBinDuration: 1
   - TimeBinId: 3
-    TimeBinDescription: 0 to 3 minutes
+    TimeBinDescription: 2 to 3 minutes
     TimeBinStartMinute: 2
     TimeBinEndMinute: 3
     TimeBinDuration: 1
   - TimeBinId: 4
-    TimeBinDescription: 0 to 4 minutes
+    TimeBinDescription: 3 to 4 minutes
     TimeBinStartMinute: 3
     TimeBinEndMinute: 4
     TimeBinDuration: 1
   - TimeBinId: 5
-    TimeBinDescription: 0 to 5 minutes
+    TimeBinDescription: 4 to 5 minutes
     TimeBinStartMinute: 4
     TimeBinEndMinute: 5
+    TimeBinDuration: 1
+  - TimeBinId: 6
+    TimeBinDescription: 5 to 6 minutes
+    TimeBinStartMinute: 5
+    TimeBinEndMinute: 6
     TimeBinDuration: 1
 DistanceBins:
   - DistanceBinId: L50

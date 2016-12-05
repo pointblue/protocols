@@ -30,6 +30,7 @@ DistanceBins:
     DistanceBinDescription:
     DistanceBinObserverMin: 0
     DistanceBinObserverMax: ??
+    # TODO: find max distance and fill in the distance bin
 DetectionCues:
   - DetectionCueId: S
     DetectionCueDescription: Singing

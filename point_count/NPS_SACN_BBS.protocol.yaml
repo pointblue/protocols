@@ -1,42 +1,10 @@
 Meta:
   ProtocolId: NPS_SACN_BBS
-  ProtocolName: SACN BBS Methods
+  ProtocolName: NPS SACN BBS Methods
   ProtocolDescriptionURL:
   DoubleObserverInd: 0
   IncludesDetectionAidInd: 0
   Description: >
-
-    1982–1983, 1998–2004
-      Breeding bird surveys (BBS) were conducted in 1982 and 1983 along 24.5-mile
-      portions of the lower St. Croix (lower river) and Namekagon rivers,
-      respectively.  These BBS routes were resurveyed during 1998 using the same
-      methods, which followed those of the US Fish and Wildlife Service’s Breeding
-      Bird Survey (Robbins 1967) with the following exceptions:
-        1)	These were river routes instead of road routes.
-        2)	Instead of an automobile, a motorized boat or a canoe was used on
-                the lower river or the Namekagon, respectively.
-        3)	The count was conducted on two days because the slower means of
-                travel prevented it from being performed on one day.
-        4)	Locations of stops were determined by marks on a map depicting
-                0.5-mile separation from previous stops.
-        5)	Each stop was not a stationary point but was instead a point at
-                which the count was begun.  The boat or canoe was allowed to
-                drift until the three-minute count period ended.
-
-      The Namekagon route starts at the County K Landing in Washburn County and
-      ends at the Namekagon Trail Bridge in Burnett County. The route began at
-      4:50 a.m. on 23 June 1998 and ended at Howell Landing at 9:15 a.m.  We
-      continued at 5:00 a.m. 24 June.
-
-      The lower river route on the St. Croix River consisted of 53 stops.  It
-      started 1 mile below the dam at St. Croix Falls in Polk County and ended
-      at the St. Croix Boomsite Park just north of Stillwater, Minnesota.  This
-      survey was conducted on 17 June starting at 4:42 a.m. and ended at Somerset
-      Landing at 8:09 a.m.  The survey continued on 18 June at 5:28 a.m. and
-      ended at 8:34a.m.
-
-      Two additional routes were added in 2000 (SACN, UNAM), one in 2003 (USAC),
-      and one in 2012 (MSAC).
 
 TimeBins:
   - TimeBinId: 1

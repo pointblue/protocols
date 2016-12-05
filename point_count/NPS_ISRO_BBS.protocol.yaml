@@ -1,6 +1,6 @@
 Meta:
   ProtocolId: NPS_ISRO_BBS
-  ProtocolName: ISRO BBS Methods
+  ProtocolName: NPS ISRO BBS Methods
   ProtocolDescriptionURL:
   DoubleObserverInd: 0
   IncludesDetectionAidInd: 0

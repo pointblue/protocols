@@ -1,6 +1,6 @@
 Meta:
   ProtocolId: NPS_INDU_BBS
-  ProtocolName: INDU BBS Methods
+  ProtocolName: NPS INDU BBS Methods
   ProtocolDescriptionURL:
   DoubleObserverInd: 0
   IncludesDetectionAidInd: 0

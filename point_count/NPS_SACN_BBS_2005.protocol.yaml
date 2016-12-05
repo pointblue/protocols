@@ -1,6 +1,6 @@
 Meta:
   ProtocolId: NPS_SACN_BBS_2005
-  ProtocolName: SACN BBS Methods 2005
+  ProtocolName: NPS SACN BBS Methods 2005
   ProtocolDescriptionURL:
   DoubleObserverInd: 0
   IncludesDetectionAidInd: 0

@@ -16,7 +16,7 @@ TimeBins:
     TimeBinDescription: 0 to 3 minutes
     TimeBinStartMinute: 0
     TimeBinEndMinute: 3
-    TimeBinDuration:
+    TimeBinDuration: 3
 DistanceBins:
   - DistanceBinId: 0.25mi
     DistanceBinDescription: 1 bin from 0 to 0.25 miles (= 402.336 meters)

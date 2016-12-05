@@ -1,0 +1,61 @@
+Meta:
+  ProtocolId: NPS_ISRO_BBS
+  ProtocolName: ISRO BBS Methods
+  ProtocolDescriptionURL:
+  DoubleObserverInd: 0
+  IncludesDetectionAidInd: 0
+  Description: >
+    Points were approximately 0.4 km (¼ mi) apart, and each had a tagged tree
+    associated with it to help in relocating the site each year. Points were
+    visited once annually between 0530 (approximately ½-hour before sunrise)
+    and 1000 EDT by one skilled observer and usually one recorder. All routes
+    were completed between 10 June and 30 June. Temperature, cloud cover, and
+    wind were recorded at each point. Unlimited radius point counts were five
+    minutes in duration, during which time all species were recorded and
+    categorized as “seen,” “heard,” or “flyover.” Data were recorded in
+    one-minute intervals. Birds not heard or seen during the five-minute count
+    but present at a census point before or after the count period, or while
+    walking between points, were recorded as “miscellaneous.” Miscellaneous
+    species were not included in the data analysis.
+TimeBins:
+  - TimeBinId: 1
+    TimeBinDescription: 0 to 1 minutes
+    TimeBinStartMinute: 0
+    TimeBinEndMinute: 1
+    TimeBinDuration: 1
+  - TimeBinId: 2
+    TimeBinDescription: 0 to 2 minutes
+    TimeBinStartMinute: 1
+    TimeBinEndMinute: 2
+    TimeBinDuration: 1
+  - TimeBinId: 3
+    TimeBinDescription: 0 to 3 minutes
+    TimeBinStartMinute: 2
+    TimeBinEndMinute: 3
+    TimeBinDuration: 1
+  - TimeBinId: 4
+    TimeBinDescription: 0 to 4 minutes
+    TimeBinStartMinute: 3
+    TimeBinEndMinute: 4
+    TimeBinDuration: 1
+  - TimeBinId: 5
+    TimeBinDescription: 0 to 5 minutes
+    TimeBinStartMinute: 4
+    TimeBinEndMinute: 5
+    TimeBinDuration: 1
+DistanceBins:
+  - DistanceBinId: ??
+    DistanceBinDescription:
+    DistanceBinObserverMin: 0
+    DistanceBinObserverMax: ??
+DetectionCues:
+  - DetectionCueId: S
+    DetectionCueDescription: Singing
+  - DetectionCueId: C
+    DetectionCueDescription: Calling
+  - DetectionCueId: O
+    DetectionCueDescription: Observed
+  - DetectionCueId: F
+    DetectionCueDescription: Flyover
+  - DetectionCueId: NV
+    DetectionCueDescription: Non-vocal

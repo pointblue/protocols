@@ -1,0 +1,22 @@
+
+Meta:
+  ProtocolId:
+  Name:
+  Description:
+  URL:
+Fields:
+  DistanceBins:  # bins for distance of bird from observer
+    Bin1:
+      Description:
+      MinDistance:
+      MaxDistance:
+  TimeBins:  # bins for time since start of sampling event
+    Bin1:
+      Description:
+      StartMinute:
+      EndMinute:
+      Duration:
+  DetectionCues: # this is a list of key-value pairs
+    Cue1: # value
+  DetectionAids:
+  ExtendedColumns:

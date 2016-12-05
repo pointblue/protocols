@@ -1,21 +1,37 @@
 Meta:
-  ProtocolId:
-  ProtocolName:
+  ProtocolId: NPS_INDU_BBS
+  ProtocolName: INDU BBS Methods
   ProtocolDescriptionURL:
-  DoubleObserverInd:
-  IncludesDetectionAidInd:
-  Description:
+  DoubleObserverInd: 0
+  IncludesDetectionAidInd: 0
+  Description: >
+    Fifty (50) roadside bird survey points are visited once each year as part
+    of the North American Breeding Bird Survey (NABBS).
+
+    At each stop, a 3-minute point count is conducted, during which, every bird
+    seen or heard within a 0.25-mile radius is recorded. Surveys start one-half
+    hour before local sunrise and take about 5 hours to complete.
 TimeBins:
-  - TimeBinId:
-    TimeBinDescription:
-    TimeBinStartMinute:
-    TimeBinEndMinute:
+  - TimeBinId: 3
+    TimeBinDescription: 0 to 3 minutes
+    TimeBinStartMinute: 0
+    TimeBinEndMinute: 3
     TimeBinDuration:
 DistanceBins:
-  - DistanceBinId:
-    DistanceBinDescription:
-    DistanceBinObserverMin:
-    DistanceBinObserverMax:
+  - DistanceBinId: 0.25mi
+    DistanceBinDescription: 1 bin from 0 to 0.25 miles (= 402.336 meters)
+    DistanceBinObserverMin: 0
+    DistanceBinObserverMax: 402
+  # TODO: do we need a distance bin for outside 0.25 miles?
+  # TODO: do we record flyovers
 DetectionCues:
-  - DetectionCueId:
-    DetectionCueDescription:
+  - DetectionCueId: S
+    DetectionCueDescription: Singing
+  - DetectionCueId: C
+    DetectionCueDescription: Calling
+  - DetectionCueId: O
+    DetectionCueDescription: Observed
+  - DetectionCueId: F
+    DetectionCueDescription: Flyover
+  - DetectionCueId: NV
+    DetectionCueDescription: Non-vocal

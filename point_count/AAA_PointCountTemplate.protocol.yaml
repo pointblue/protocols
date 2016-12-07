@@ -1,0 +1,22 @@
+Meta:
+  ProtocolId:
+  ProtocolName:
+  ProtocolDescriptionURL:
+  DoubleObserverInd:
+  IncludesDetectionAidInd:
+  Description: >
+    multi-line text here
+TimeBins:
+  - TimeBinId:
+    TimeBinDescription:
+    TimeBinStartMinute: # first bin starts at 0
+    TimeBinEndMinute:
+    TimeBinDuration:
+DistanceBins:
+  - DistanceBinId:
+    DistanceBinDescription:
+    DistanceBinObserverMin: # lower bound of the distance bin, in meters
+    DistanceBinObserverMax: # upper bound of the distance bin, in meters
+DetectionCues:
+  - DetectionCueId:
+    DetectionCueDescription:

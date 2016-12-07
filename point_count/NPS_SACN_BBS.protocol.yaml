@@ -1,0 +1,63 @@
+Meta:
+  ProtocolId: NPS_SACN_BBS
+  ProtocolName: NPS SACN BBS Methods
+  ProtocolDescriptionURL:
+  DoubleObserverInd: 0
+  IncludesDetectionAidInd: 0
+  Description: >
+
+TimeBins:
+  - TimeBinId: 1
+    TimeBinDescription: 0 to 1 minutes
+    TimeBinStartMinute: 0
+    TimeBinEndMinute: 1
+    TimeBinDuration: 1
+  - TimeBinId: 2
+    TimeBinDescription: 1 to 2 minutes
+    TimeBinStartMinute: 1
+    TimeBinEndMinute: 2
+    TimeBinDuration: 1
+  - TimeBinId: 3
+    TimeBinDescription: 2 to 3 minutes
+    TimeBinStartMinute: 2
+    TimeBinEndMinute: 3
+    TimeBinDuration: 1
+  - TimeBinId: 4
+    TimeBinDescription: 3 to 4 minutes
+    TimeBinStartMinute: 3
+    TimeBinEndMinute: 4
+    TimeBinDuration: 1
+  - TimeBinId: 5
+    TimeBinDescription: 4 to 5 minutes
+    TimeBinStartMinute: 4
+    TimeBinEndMinute: 5
+    TimeBinDuration: 1
+  - TimeBinId: 6
+    TimeBinDescription: 5 to 6 minutes
+    TimeBinStartMinute: 5
+    TimeBinEndMinute: 6
+    TimeBinDuration: 1
+DistanceBins:
+  - DistanceBinId: L50
+    DistanceBinDescription: <50m
+    DistanceBinObserverMin: 0
+    DistanceBinObserverMax: 50
+  - DistanceBinId: G50
+    DistanceBinDescription: 50-100m
+    DistanceBinObserverMin: 50
+    DistanceBinObserverMax: 100
+  - DistanceBinId: B00
+    DistanceBinDescription: >100m
+    DistanceBinObserverMin: 100
+    DistanceBinObserverMax: 1000
+DetectionCues:
+  - DetectionCueId: S
+    DetectionCueDescription: Singing
+  - DetectionCueId: C
+    DetectionCueDescription: Calling
+  - DetectionCueId: O
+    DetectionCueDescription: Observed
+  - DetectionCueId: F
+    DetectionCueDescription: Flyover
+  - DetectionCueId: NV
+    DetectionCueDescription: Non-vocal

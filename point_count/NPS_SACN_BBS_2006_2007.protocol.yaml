@@ -1,0 +1,35 @@
+Meta:
+  ProtocolId: NPS_SACN_BBS_2006_2007
+  ProtocolName: NPS SACN BBS Methods 2006-2007
+  ProtocolDescriptionURL:
+  DoubleObserverInd: 0
+  IncludesDetectionAidInd: 0
+  Description: >
+
+    2006–2007
+      5-minute count duration.
+
+      This method was also used on the USAC transect in 2005.
+
+TimeBins:
+  - TimeBinId: 0
+    TimeBinDescription: 0 to 5 minutes
+    TimeBinStartMinute: 0
+    TimeBinEndMinute: 5
+    TimeBinDuration: 5
+DistanceBins:
+  - DistanceBinId: L1000
+    DistanceBinDescription: 0-1000m
+    DistanceBinObserverMin: 0
+    DistanceBinObserverMax: 1000
+DetectionCues:
+  - DetectionCueId: S
+    DetectionCueDescription: Singing
+  - DetectionCueId: C
+    DetectionCueDescription: Calling
+  - DetectionCueId: O
+    DetectionCueDescription: Observed
+  - DetectionCueId: F
+    DetectionCueDescription: Flyover
+  - DetectionCueId: NV
+    DetectionCueDescription: Non-vocal

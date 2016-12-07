@@ -1,0 +1,87 @@
+SharedDictionaryCodeSets: []
+
+Protocol:
+  ProtocolId: NPS_HTLN_WEATHER
+  ProtocolName: 'NPS HTLN Weather Conditions'
+  ProtocolDescriptionURL: null
+  DoubleObserverInd: 0
+  IncludesDetectionAidInd: 0
+  ProtocolTypeCd: SiteConditions
+  CategorySets:
+      -
+          ConditionCategorySetId: CloudCover
+          MultiplesAllowed: 0
+          ConditionCategorySetDescription:
+          DisplayOrder: 3
+          ConditionCategorySetRules: null
+          Locales:
+              en:
+                  ConditionCategorySetLabel: 'Cloud Cover conditions'
+          Categories:
+              -
+                  ConditionCategoryId: CloudCoverPercent
+                  ConditionCategoryDescription: 'Percentage cloud cover'
+                  ConditionCategoryDataTypeCd: integer
+                  DefaultValue: null
+                  ConditionCategoryRules: null
+                  ConditionCategoryRuleData: null
+                  DisplayOrder: 5
+                  Help: '<p>Enter the percent of cloud cover during your observation</p>'
+                  Locales:
+                      en:
+                          ConditionCategoryLabelBefore: 'Cloud Cover'
+                          ConditionCategoryLabelAfter: '%'
+                          ConditionCategoryDescription: null
+      -
+          ConditionCategorySetId: Temperature
+          MultiplesAllowed: 0
+          ConditionCategorySetDescription:
+          DisplayOrder: 1
+          ConditionCategorySetRules: null
+          Locales:
+              en:
+                  ConditionCategorySetLabel: 'Temperature conditions'
+          Categories:
+              -
+                  ConditionCategoryId: Temperature
+                  ConditionCategoryDescription: 'The ambient temperature'
+                  ConditionCategoryDataTypeCd: decimal
+                  DefaultValue: null
+                  ConditionCategoryRules: null
+                  ConditionCategoryRuleData: null
+                  DisplayOrder: 1
+                  Help: '<p>Enter the temperature in the units chosen</p>'
+                  Locales:
+                      en:
+                          ConditionCategoryLabelBefore: Temperature
+                          ConditionCategoryLabelAfter: C
+                          ConditionCategoryDescription: Degrees Celsius
+      -
+          ConditionCategorySetId: Wind
+          MultiplesAllowed: 0
+          ConditionCategorySetDescription:
+          DisplayOrder: 2
+          ConditionCategorySetRules: null
+          Locales:
+              en:
+                  ConditionCategorySetLabel: 'Wind conditions'
+          Categories:
+              -
+                  ConditionCategoryId: WindSpeed
+                  ConditionCategoryDescription: 'Wind speed'
+                  ConditionCategoryDataTypeCd: dictionary
+                  DefaultValue: mph
+                  ConditionCategoryRules: null
+                  ConditionCategoryRuleData: null
+                  DisplayOrder: 1
+                  Help: null
+                  Locales:
+                      en:
+                          ConditionCategoryLabelBefore: null
+                          ConditionCategoryLabelAfter: null
+                          ConditionCategoryDescription: null
+                  Dictionary:
+                      CodeSetName: WindSpeedRanges
+                      CodeSetDescription: 'Wind speed ranges'
+                      Codes:
+                          '?': Unknown

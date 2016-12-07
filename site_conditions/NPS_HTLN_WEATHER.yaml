@@ -12,7 +12,7 @@ Protocol:
           ConditionCategorySetId: CloudCover
           MultiplesAllowed: 0
           ConditionCategorySetDescription:
-          DisplayOrder: 3
+          DisplayOrder: 0
           ConditionCategorySetRules: null
           Locales:
               en:
@@ -50,7 +50,7 @@ Protocol:
                   ConditionCategoryRules: null
                   ConditionCategoryRuleData: null
                   DisplayOrder: 1
-                  Help: '<p>Enter the temperature in the units chosen</p>'
+                  Help: '<p>Enter the temperature in degrees Celsius</p>'
                   Locales:
                       en:
                           ConditionCategoryLabelBefore: Temperature
@@ -70,11 +70,11 @@ Protocol:
                   ConditionCategoryId: WindSpeed
                   ConditionCategoryDescription: 'Wind speed'
                   ConditionCategoryDataTypeCd: dictionary
-                  DefaultValue: mph
+                  DefaultValue: '?'
                   ConditionCategoryRules: null
                   ConditionCategoryRuleData: null
                   DisplayOrder: 1
-                  Help: null
+                  Help: '<p>Select the windspeed range</p>'
                   Locales:
                       en:
                           ConditionCategoryLabelBefore: null
@@ -85,3 +85,81 @@ Protocol:
                       CodeSetDescription: 'Wind speed ranges'
                       Codes:
                           '?': Unknown
+                          0: '(< 2 km/h)   - calm, smoke rises vertically'
+                          1: '(2-5 km/h)   - smoke drifts'
+                          2: '(6-12 km/h)  - light breeze felt on face, leaves rustle'
+                          3: '(13-19 km/h) - leaves and twigs in constant motion'
+                          4: '(20-29 km/h) - small branches move, raises loose paper, dust rises'
+                          5: '(30-39 km/h) - fresh breeze, small trees sway'
+                          6: '(40-50 km/h) - strong breeze, large branches moving, wind whistling'
+      -
+          ConditionCategorySetId: Rain
+          MultiplesAllowed: 0
+          ConditionCategorySetDescription:
+          DisplayOrder: 3
+          ConditionCategorySetRules: null
+          Locales:
+              en:
+                  ConditionCategorySetLabel: 'Rain conditions'
+          Categories:
+              -
+                  ConditionCategoryId: Rain
+                  ConditionCategoryDescription: Rain
+                  ConditionCategoryDataTypeCd: dictionary
+                  DefaultValue: '?'
+                  ConditionCategoryRules: null
+                  ConditionCategoryRuleData: null
+                  DisplayOrder: 1
+                  Help: '<p>Select the rain category</p>'
+                  Locales:
+                      en:
+                          ConditionCategoryLabelBefore: null
+                          ConditionCategoryLabelAfter: null
+                          ConditionCategoryDescription: null
+                  Dictionary:
+                      CodeSetName: RainCategories
+                      CodeSetDescription: 'Rain'
+                      Codes:
+                          '?': Unknown
+                          0: no rain
+                          1: mist or fog
+                          2: light drizzle
+                          3: light rain
+                          4: heavy rain
+                          5: snow
+
+      -
+          ConditionCategorySetId: Noise
+          MultiplesAllowed: 0
+          ConditionCategorySetDescription:
+          DisplayOrder: 4
+          ConditionCategorySetRules: null
+          Locales:
+              en:
+                  ConditionCategorySetLabel: 'Noise Conditions'
+          Categories:
+              -
+                  ConditionCategoryId: Noise
+                  ConditionCategoryDescription: 'Ambient Noise'
+                  ConditionCategoryDataTypeCd: dictionary
+                  DefaultValue: '?'
+                  ConditionCategoryRules: null
+                  ConditionCategoryRuleData: null
+                  DisplayOrder: 1
+                  Help: '<p>Select the level of ambient noise</p>'
+                  Locales:
+                      en:
+                          ConditionCategoryLabelBefore: null
+                          ConditionCategoryLabelAfter: null
+                          ConditionCategoryDescription: null
+                  Dictionary:
+                      CodeSetName: NoiseLevel
+                      CodeSetDescription: 'Noise levels'
+                      Codes:
+                          '?': Unknown
+                          0: quiet        - normal background noises; no interference
+                          1: low noise    - might be missing some high-pitched songs/calls of distant birds
+                          2: medium noise - detection radius is probably substantially reduced
+                          3: high noise   - probably detecting only the loudest/closest birds
+
+

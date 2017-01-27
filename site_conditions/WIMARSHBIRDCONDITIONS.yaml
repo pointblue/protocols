@@ -1,0 +1,352 @@
+ProtocolId: WI_MARSHBIRD
+ProtocolName: 'Wisconsin Secretive Marshbirds Site Conditions'
+ProtocolDescriptionURL: ''
+DoubleObserverInd: 0
+IncludesDetectionAidInd: 0
+ProtocolTypeCd: SiteConditions
+CategorySets:
+    -
+        ConditionCategorySetId: Weather
+        MultiplesAllowed: 0
+        ConditionCategorySetDescription: 'weather data'
+        DisplayOrder: 1
+        ConditionCategorySetRules: null
+        Locales:
+            en:
+                ConditionCategorySetLabel: Weather
+        Categories:
+            -
+                ConditionCategoryId: Wind
+                ConditionCategoryDescription: 'Wind strength described using the Beaufort scale'
+                ConditionCategoryDataTypeCd: dictionary
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 1
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Wind (0-5)'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'Wind strength using the Beaufort scale'
+                CodeSet:
+                    CodeSetName: BeaufortScale5
+                    CodeSetDescription: 'Beaufort scale to level 5'
+                    Codes:
+                        -
+                             '0': 'Smoke rises vertically'
+                        -
+                             '1': 'Wind direction shown by smoke drift'
+                        -
+                             '2': 'Wind felt on face; leaves rustle'
+                        -
+                             '3': 'Leaves, small twigs in constant motion; light flag extended'
+                        -
+                             '4': 'Raises dust and loose paper; small branches are moved'
+                        -
+                             '5': 'Small trees with leaves sway; crested wavelets on inland waters'
+            -
+                ConditionCategoryId: Sky
+                ConditionCategoryDescription: 'Sky conditions'
+                ConditionCategoryDataTypeCd: dictionary
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 2
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Sky conditions'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'Sky conditions'
+                CodeSet:
+                    CodeSetName: MIMARSHB_CloudCover
+                    CodeSetDescription: 'Cloud cover'
+                    Codes:
+                        -
+                            '0': 'Clear or a few clouds'
+                        -
+                            '1': 'Partly cloudy or variable sky'
+                        -
+                            '2': 'Cloudy or overcast'
+                        -
+                            '4': 'Fog or smoke'
+                        -
+                            '5': 'Drizzle'
+                        -
+                            '6': 'Snow'
+                        -
+                            '8': 'Showers'
+            -
+                ConditionCategoryId: Temperature
+                ConditionCategoryDescription: 'The ambient temperature in degrees Fahrenheit'
+                ConditionCategoryDataTypeCd: float
+                DefaultValue: null
+                ConditionCategoryRules: required
+                ConditionCategoryRuleData: null
+                DisplayOrder: 1
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: TempF
+                        ConditionCategoryLabelAfter: ''
+                        ConditionCategoryDescription: 'The ambient temperature'
+    -
+        ConditionCategorySetId: Noise
+        MultiplesAllowed: 0
+        ConditionCategorySetDescription: 'Noise data'
+        DisplayOrder: 2
+        ConditionCategorySetRules: null
+        Locales:
+            en:
+                ConditionCategorySetLabel: Weather
+        Categories:
+            -
+                ConditionCategoryId: NoiseCd
+                ConditionCategoryDescription: 'Noise will be described using the following scale: 0 . none; 1 . faint; 2 . moderate; 3 . loud; 4 . intense;'
+                ConditionCategoryDataTypeCd: integer
+                DefaultValue: null
+                ConditionCategoryRules: 'regex,required'
+                ConditionCategoryRuleData: '/^[0-4]$/'
+                DisplayOrder: 1
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Noise (0-4)'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'Noise will be described using the following scale: 0 . none; 1 . faint; 2 . moderate; 3 . loud; 4 . intense;'
+    -
+        ConditionCategorySetId: Habitat1
+        MultiplesAllowed: 0
+        ConditionCategorySetDescription: 'Habitat data, first set'
+        DisplayOrder: 3
+        ConditionCategorySetRules: null
+        Locales:
+            en:
+                ConditionCategorySetLabel: Habitat data
+        Categories:
+            -
+                ConditionCategoryId: PercentWetlands
+                ConditionCategoryDescription: 'The percent of the survey area that is wetlands'
+                ConditionCategoryDataTypeCd: percentage
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 1
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Percent wetlands'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The percent of the survey area that is wetlands'
+            -
+                ConditionCategoryId: EmergentHerbaceous
+                ConditionCategoryDescription: 'The percent of the survey area that is emergent herbaceous'
+                ConditionCategoryDataTypeCd: percentage
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 2
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: '% emergent herbaceous'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The percent of the survey area that is emergent herbaceous'
+            -
+                ConditionCategoryId: OpenWater_FloatingPlants
+                ConditionCategoryDescription: 'The percent of the survey area that is open water or floating plants'
+                ConditionCategoryDataTypeCd: percentage
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 3
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: '% open water - floating plants'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The percent of the survey area that is open water or floating plants'
+                     
+            -
+                ConditionCategoryId: ExposedMudSandRock
+                ConditionCategoryDescription: 'The percent of the survey area that is exposed mud, sand, or rocks'
+                ConditionCategoryDataTypeCd: percentage
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 4
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: '% mud-sand-rocks'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The percent of the survey area that is exposed mud, sand, or rocks'
+            -
+                ConditionCategoryId: Trees
+                ConditionCategoryDescription: 'The percent of the survey area that is tree cover'
+                ConditionCategoryDataTypeCd: percentage
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 5
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: '% trees'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The percent of the survey area that is tree cover'
+            -
+                ConditionCategoryId: Shrubs
+                ConditionCategoryDescription: 'The percent of the survey area that is shrub cover'
+                ConditionCategoryDataTypeCd: percentage
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 6
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: '% shrubs'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The percent of the survey area that is shrub cover'
+    -
+        ConditionCategorySetId: Habitat2
+        MultiplesAllowed: 0
+        ConditionCategorySetDescription: 'Habitat data, second set'
+        DisplayOrder: 4
+        ConditionCategorySetRules: null
+        Locales:
+            en:
+                ConditionCategorySetLabel: Habitat data
+        Categories:                        
+            -
+                ConditionCategoryId: PrimaryDominantHerbaceous
+                ConditionCategoryDescription: 'The type of herbaceous vegetation primarily dominant'
+                ConditionCategoryDataTypeCd: dictionary
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 1
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Primary dominant herbaceous'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The type of herbaceous vegetation primarily dominant'
+                CodeSet:
+                    CodeSetName: MIMARSHB_HerbaceousDominant
+                    CodeSetDescription: 'Type of primarily or secondarily dominant herbaceous vegetation'
+                    Codes:
+                        -
+                            '1': 'Cattails (Typha spp.)'
+                        -
+                            '2': 'Reeds (Phragmites)'
+                        -
+                            '3': 'Reed canary grass (Phalaris)'
+                        -
+                            '4': 'Grasses and grasslike sedges (Carex etc.)'
+                        -
+                            '5': 'Rushes, bulrushes (e.g., Juncus, Scirpus)'
+                        -
+                            '6': 'Purple loosestrife (Lythrum salicaria)'  
+                        -
+                            '7': 'Water willow or swamp loosestrife (Decodon verticillatus)'
+                        -
+                            '8': 'Pickerelweed (Pontederia cordata)'
+                        -
+                            '9': 'Arrowhead (Sagittaria spp.)'
+                        -
+                            '10': 'Smartweed (Polygonum spp.)'
+                        -
+                            '11': 'Bur-reed (Sparganium spp.)'
+                        -
+                            '12': 'Wild rice (Zizania palustris)'
+                        -
+                            '13': 'Other (list details on comments)'    
+            -
+                ConditionCategoryId: PercentPrimaryDominant
+                ConditionCategoryDescription: 'The percent of the herbaceous vegetation that is the primarily dominant type'
+                ConditionCategoryDataTypeCd: percentage
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 2
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: '% primary dominant'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The percent of the herbaceous vegetation that is the primarily dominant type'
+            -
+                ConditionCategoryId: SecondaryDominantHerbaceous
+                ConditionCategoryDescription: 'The type of herbaceous vegetation secondarily dominant'
+                ConditionCategoryDataTypeCd: dictionary
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 3
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Secondarily dominant herbaceous'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The type of herbaceous vegetation secondarily dominant'
+                CodeSet:
+                    CodeSetName: MIMARSHB_HerbaceousDominant
+                    CodeSetDescription: 'Type of primarily or secondarily dominant herbaceous vegetation'
+                    Codes:
+                        -
+                            '1': 'Cattails (Typha spp.)'
+                        -
+                            '2': 'Reeds (Phragmites)'
+                        -
+                            '3': 'Reed canary grass (Phalaris)'
+                        -
+                            '4': 'Grasses and grasslike sedges (Carex etc.)'
+                        -
+                            '5': 'Rushes, bulrushes (e.g., Juncus, Scirpus)'
+                        -
+                            '6': 'Purple loosestrife (Lythrum salicaria)'  
+                        -
+                            '7': 'Water willow or swamp loosestrife (Decodon verticillatus)'
+                        -
+                            '8': 'Pickerelweed (Pontederia cordata)'
+                        -
+                            '9': 'Arrowhead (Sagittaria spp.)'
+                        -
+                            '10': 'Smartweed (Polygonum spp.)'
+                        -
+                            '11': 'Bur-reed (Sparganium spp.)'
+                        -
+                            '12': 'Wild rice (Zizania palustris)'
+                        -
+                            '13': 'Other (list details on comments)'
+            -
+                ConditionCategoryId: PercentSecondaryDominant
+                ConditionCategoryDescription: 'The percent of the herbaceous vegetation that is the secondarily dominant type'
+                ConditionCategoryDataTypeCd: percentage
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 4
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: '% secondary dominant'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'The percent of the herbaceous vegetation that is the secondarily dominant type'
+            -
+                ConditionCategoryId: SiteConditionsComments
+                ConditionCategoryDescription: 'Comments about the site conditions measurements'
+                ConditionCategoryDataTypeCd: string
+                DefaultValue: null
+                ConditionCategoryRules: null
+                ConditionCategoryRuleData: null
+                DisplayOrder: 5
+                Help: null
+                Locales:
+                    en:
+                        ConditionCategoryLabelBefore: 'Comments'
+                        ConditionCategoryLabelAfter: null
+                        ConditionCategoryDescription: 'Comments on site condition measurements'                       
